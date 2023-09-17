@@ -8,4 +8,5 @@ I used MySQL for the database.
 
 You can communucate with me via my email or my linkedin account.
 Made by Berk Öcal, Linkedin: www.linkedin.com/in/berkocall/
+
 Mail: berkocal99@gmail.com
