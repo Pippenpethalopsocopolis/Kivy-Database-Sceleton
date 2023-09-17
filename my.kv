@@ -1,0 +1,40 @@
+MDFloatLayout:
+    MDBoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        spacing: 20
+        padding: 20
+
+        MDLabel:
+            id: word_label
+            text_size: self.size
+            halign: "center"
+            valign: "middle"
+            text: "Write a Name"
+            font_size: 32
+
+        MDTextField:
+            mode: "rectangle"
+            hint_text: "Name:"
+            id: word_input
+            multiline: False
+            size_hint: (.5, .2)
+            pos_hint: {"center_x": .5}
+
+        MDRaisedButton:
+            size_hint: (.3, .3)
+            font_size: 25
+            pos_hint: {"center_x": .5}
+            text: "Send"
+            md_bg_color: "#512DA8"
+            elevation: 0
+            on_release: app.submit()
+
+        MDRaisedButton:
+            size_hint: (.3, .3)
+            font_size: 25
+            pos_hint: {"center_x": .5}
+            text: "Show the\nRecords"
+            md_bg_color: "#512DA8"
+            elevation: 0
+            on_release: app.show_records()
